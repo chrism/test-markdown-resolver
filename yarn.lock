@@ -1900,7 +1900,7 @@ broccoli-config-replace@^1.1.2:
     debug "^2.2.0"
     fs-extra "^0.24.0"
 
-broccoli-debug@^0.6.1, broccoli-debug@^0.6.4, broccoli-debug@^0.6.5:
+broccoli-debug@^0.6.1, broccoli-debug@^0.6.3, broccoli-debug@^0.6.4, broccoli-debug@^0.6.5:
   version "0.6.5"
   resolved "https://registry.yarnpkg.com/broccoli-debug/-/broccoli-debug-0.6.5.tgz#164a5cdafd8936e525e702bf8f91f39d758e2e78"
   integrity sha512-RIVjHvNar9EMCLDW/FggxFRXqpjhncM/3qq87bn/y+/zR9tqEkHvTqbyOc4QnB97NO2m6342w4wGkemkaeOuWg==
@@ -2882,6 +2882,11 @@ delegates@^1.0.0:
   version "1.0.0"
   resolved "https://registry.yarnpkg.com/delegates/-/delegates-1.0.0.tgz#84c6e159b81904fdca59a0ef44cd870d31250f9a"
   integrity sha1-hMbhWbgZBP3KWaDvRM2HDTElD5o=
+
+denodeify@^1.2.1:
+  version "1.2.1"
+  resolved "https://registry.yarnpkg.com/denodeify/-/denodeify-1.2.1.tgz#3a36287f5034e699e7577901052c2e6c94251631"
+  integrity sha1-OjYof1A05pnnV3kBBSwubJQlFjE=
 
 depd@~1.1.2:
   version "1.1.2"
@@ -3882,7 +3887,7 @@ expand-tilde@^2.0.0, expand-tilde@^2.0.2:
   dependencies:
     homedir-polyfill "^1.0.1"
 
-express@^4.10.7, express@^4.16.3:
+express@^4.10.7, express@^4.16.2, express@^4.16.3:
   version "4.16.4"
   resolved "https://registry.yarnpkg.com/express/-/express-4.16.4.tgz#fddef61926109e24c515ea97fd2f1bdbf62df12e"
   integrity sha512-j12Uuyb4FMrd/qQAm6uCHAkPtO8FDTRJZBDd5D2KOL2eLaz1yUNdUB/NOIyq0iU4q4cFarsUCrnFDPBcnksuOg==
@@ -4052,7 +4057,7 @@ fastboot-transform@^0.1.3:
     broccoli-stew "^1.5.0"
     convert-source-map "^1.5.1"
 
-fastboot@^1.2.0:
+fastboot@^1.1.3, fastboot@^1.2.0:
   version "1.2.1"
   resolved "https://registry.yarnpkg.com/fastboot/-/fastboot-1.2.1.tgz#71e91151293be814b2f9c41fe7513bf4e9b6ef91"
   integrity sha512-WK5Jy71Q6FPoGkooEnWt7Yc2vb23f6C2RtBUutO459TskFnUhzOF8ZJASNNjURQYq8U/pTha2LI4Ix7UInffgg==
@@ -6757,6 +6762,31 @@ prelude-ls@~1.1.2:
   version "1.1.2"
   resolved "https://registry.yarnpkg.com/prelude-ls/-/prelude-ls-1.1.2.tgz#21932a549f5e52ffd9a827f570e04be62a97da54"
   integrity sha1-IZMqVJ9eUv/ZqCf1cOBL5iqX2lQ=
+
+prember-middleware@^0.1.0:
+  version "0.1.0"
+  resolved "https://registry.yarnpkg.com/prember-middleware/-/prember-middleware-0.1.0.tgz#00314e6fe869fdb0b3c4ca7099f7f03315d66b9b"
+  integrity sha512-FdrEB7y0HFhSPfb1iXrRCZNWrx5TasRQ1U1wFsp2al9u+BlBVjHr9/EEmg9eIctWJqct3Zhdbk9aqzAvuPDWSA==
+  dependencies:
+    chalk "^2.3.0"
+    clean-base-url "^1.0.0"
+    ember-cli-babel "^6.6.0"
+    prember "*"
+
+prember@*, prember@^0.4.0:
+  version "0.4.0"
+  resolved "https://registry.yarnpkg.com/prember/-/prember-0.4.0.tgz#55607d74babe74958e0c08d78da66e002dc02bea"
+  integrity sha512-gqnPdeOQcFa/F1ydOqKXTLgIWUoCqQqsII9crCEO4KDDazcRkaKBeBSmLPdBWZat93h60Sa7SBXhSPRMGZWfBA==
+  dependencies:
+    broccoli-debug "^0.6.3"
+    broccoli-merge-trees "^2.0.0"
+    broccoli-plugin "^1.3.0"
+    chalk "^2.3.0"
+    denodeify "^1.2.1"
+    ember-cli-babel "^6.6.0"
+    express "^4.16.2"
+    fastboot "^1.1.3"
+    mkdirp "^0.5.1"
 
 preserve@^0.2.0:
   version "0.2.0"
