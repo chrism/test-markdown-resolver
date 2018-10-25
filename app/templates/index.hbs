@@ -1,0 +1,10 @@
+<h2>Projects</h2>
+
+<ul class="list-reset">
+  {{#each model.files as |file|}}
+    {{log file}}
+    <li>{{#link-to "project" file.attributes.id}}{{file.attributes.title}}{{/link-to}} — {{file.attributes.createdAt}}</li>
+  {{/each}}
+</ul>
+
+{{outlet}}
